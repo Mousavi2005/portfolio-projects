@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: "Roboto Flex", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJiYpXWFLLJTfS0uSQ53kL8bq1rLcXnhhaoQ&s');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding-top: 30vh;
+  height:100vh;
+  border: 3px red solid;
+}
+
+#top {
+  width:fit-content;
+  height: fit-content;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  border: 1px white solid;
+
+}
+
+#headText {
+  color: white;
+  font-size: 1.5rem;
+}
+
+#bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  justify-items: center;
+  width: 500px;
+  background-color: white;
+  padding: 20px ;
+  border-radius: 10px;
+}
+
+#quote {
+  opacity: 80%;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+#author {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: red;
+  text-transform: uppercase;
+}
+
+.btn {
+  color: white;
+  background: black;
+  height: auto;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
