@@ -20,7 +20,7 @@ export default function IngridientListComponent(props) {
             </div> */}
 
             <div className={`w-full h-24 flex flex-col items-center justify-between py-8 pb-40 ${props.showGenerateBtn ? 'block' : 'hidden'}`}>
-                <p className="text-lg">Ready to generate recipe?</p>
+                <p className="text-lg mb-10">Ready to generate recipe?</p>
                 <button onClick={showAiRecipe} className="bg-[#F97316] text-white px-4 py-2 rounded-lg text-lg">Generate</button>
             </div>
 
