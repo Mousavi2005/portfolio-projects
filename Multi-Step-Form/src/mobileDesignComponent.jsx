@@ -5,9 +5,11 @@ import { useState } from "react"
 
 // let plan = ''
 
-export default function mobileDesign() {
+export default function mobileDesign(props) {
     const [validation, setvalidation] = useState(() => [])
-    const [plan, setPlan] = useState(() => '')
+    // const [plan, setPlan] = useState(() => '')
+    const plan = props.plan
+    const setPlan = props.setPlan
 
     const [step, setStep] = useState(() => 2)
 

@@ -25,12 +25,12 @@ export default function DesktopRighttComponent(props) {
 
     return (
         <div className="flex-[5]"> 
-            <MobileBodyComponent val = {validation} step = {props.step} setStep = {props.setStep} isdesktop = {true}/>
+            <MobileBodyComponent val = {validation} step = {props.step} setStep = {props.setStep} isdesktop = {true} setPlan = {props.setPlan} plan = {props.plan} />
 
             <div>
                 <MobileBottomComponent passValidation = {getValidation} minus = {minusStep} add = {addStep} step = {props.step} />
             </div>
-            {/* <MobileBottomComponent passValidation = {getValidation} minus = {minusStep} add = {addStep} step = {step} /> */}
+            
         </div> 
     )
 }

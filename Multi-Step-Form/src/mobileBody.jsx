@@ -16,6 +16,7 @@ export default function MobileBodyComponent(props) {
     const [selectedAddOns, setSelectedAddOns] = useState(() => [])
     const [tottalPrice, setTottalPrice] = useState(0)
     const [v, setv] = useState([])
+    // const setPlan = props.setPlan
 
     function setMonthly() {
         
