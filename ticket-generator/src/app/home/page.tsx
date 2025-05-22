@@ -1,15 +1,20 @@
 'use client'
-import { useRouter } from "next/navigation"
 
+import { useRouter } from "next/navigation"
 import { useState } from "react"
+import {useStore} from '../../lib/store'
 
 export default function HomePage() {
     const router = useRouter()
     const[name, setName] = useState(() => '')
-    const[email, setEmail] = useState(() => '')
+    // const[email, setEmail] = useState(() => '')
+    const { email, setEmail } = useStore(state => ({
+        email: state.email,
+        setEmail: state.setEmail,
+    }));
     const[username, setUsername] = useState(() => '')
 
-    const validateEmail = (email) => {
+    const validateEmail = (email: string) => {
     return String(email)
         .toLowerCase()
         .match(
@@ -18,7 +23,6 @@ export default function HomePage() {
     };
 
     function formHandler(formData) {
-        // console.log(formData.get('fullName'))
         const name = formData.get('fullName')
         const email = formData.get('email')
         const username = formData.get('username')
