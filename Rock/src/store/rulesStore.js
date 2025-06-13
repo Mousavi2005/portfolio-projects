@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 
 const useRulesStore = defineStore('rulesStore', {
     state: () => ({
-        closed: false
+        closed: true
     }),
 
     actions: {

@@ -1,6 +1,6 @@
 <template>
 
-    <div class="w-full h-full flex flex-col items-center justify-between xl:justify-center py-18">
+    <div class="w-full h-full flex flex-col items-center justify-between xl:justify-center py-18 xl:bg-black/50">
         <div class="xl:w-[370px] xl:h-[420px] bg-white flex flex-col items-center gap-10 p-8">
             <div class="w-full xl:flex xl:justify-between hidden">
                 <p class=" text-3xl">RULES</p>
